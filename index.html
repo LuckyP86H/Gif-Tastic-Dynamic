@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <title>GifTastic</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Styling CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Top row with logo and buttons -->
+        <div class="row align-items-center">
+            <div class="col-lg-3 text-lg-left text-md-center text-sm-center text-center">
+                <a href="index.html">
+                    <h1>GifTastic</h1>
+                </a>
+            </div>
+
+            <div class="col-lg-9">
+                <div id="topicButtons"></div>
+            </div>
+        </div>
+
+        <br>
+        <form id="topic-form">
+            <div class="row">
+
+                <input class="col-lg-10 col-md-9 col-sm-12" type="text" id="topic-input" placeholder="Search for trending GIFs...">
+                <input class="col-lg-2 col-md-3 col-sm-6 mx-auto" type="submit" value="Submit" id="addTopic">
+            </div>
+        </form>
+
+        <br>
+
+        <div class="row">
+            <div class="col-sm">
+                <div id="topics-container">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- javascript -->
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
