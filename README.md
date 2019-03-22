@@ -1,12 +1,13 @@
 # GifTastic Dynamic Web
 
-## General Information
+1. General Information
 
-- use the GIPHY API to make a dynamic web page that populates with gifs of your choice; then, call the GIPHY API
-- use JavaScript and jQuery to change the HTML of your site.
+* use the GIPHY API to make a dynamic web page that populates with gifs of your choice; then, call the GIPHY API
+
+* use JavaScript and jQuery to change the HTML of your site.
 
 
-## Instructions
+**Instructions**
 
 1. Create an array of strings, each one related to a topic that interests you. Save it to a variable called `topics`.
 
