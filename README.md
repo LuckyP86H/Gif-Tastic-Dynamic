@@ -1,5 +1,6 @@
 # GifTastic Dynamic Web
 
+
 1. General Information
 
 * use the GIPHY API to make a dynamic web page that populates with gifs of your choice; then, call the GIPHY API
@@ -7,15 +8,15 @@
 * use JavaScript and jQuery to change the HTML of your site.
 
 
-**Instructions**
+## Instructions:
 
 1. Create an array of strings, each one related to a topic that interests you. Save it to a variable called `topics`.
 
-        ## make a list of people with different titles or roles
+ - make a list of people with different titles or roles
 
 2.  Take the topics in this array and create buttons in the HTML. 
 
-        ## using a loop that appends a button for each string in the array.
+ - using a loop that appends a button for each string in the array.
 
 3. When the user clicks on a button, the page should grab 10 static, non-animated gif images from the GIPHY API and place them on the page.
 
@@ -23,14 +24,16 @@
 
 5. Under every gif, display its rating (PG, G, so on).
     
-        ## This data is provided by the GIPHY API.
+ - This data is provided by the GIPHY API.
         
-        ## Only once images displaying with button presses, move on to the next step.
+ - Only once images displaying with button presses, move on to the next step.
 
 6. Add a form to the page takes the value from a user input box and adds it into the `topics` array. Then make a function call that takes each topic in the array remakes the buttons on the page.
     
 
-##### NOTE: Future improvement 
+## Note: 
+
+**Future improvement**
 
 1. Ensure the app is fully mobile responsive.
 
