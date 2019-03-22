@@ -52,3 +52,5 @@
     - This could look into making this section persist even when the page is reloaded *(via localStorage or cookies)*.
 
 
+____________________
+<sub> &copy; Paul Xu at Univerversity of Toronto School of Continuing Studies Coding Boot Camp in March 2019 </sub>
