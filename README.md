@@ -1,7 +1,6 @@
 # GifTastic Dynamic Web
 
-
-1. General Information
+General Information
 
 * use the GIPHY API to make a dynamic web page that populates with gifs of your choice; then, call the GIPHY API
 
