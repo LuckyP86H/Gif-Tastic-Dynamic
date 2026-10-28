@@ -1,0 +1,8 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "entry": ["e2e/**/*.spec.ts", "scripts/*.mjs"],
+  "project": ["src/**/*.{ts,svelte}", "e2e/**/*.ts", "scripts/*.mjs", "*.config.ts"],
+  "ignoreExportsUsedInFile": true,
+  "ignoreDependencies": ["cloudflare"],
+  "ignoreBinaries": ["ffmpeg"]
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "$app/tsconfig",
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "types": ["$app/types", "node", "bun"]
+  },
+  "include": ["src", "e2e", "*.config.ts", "worker-configuration.d.ts"],
+  "exclude": ["node_modules", ".svelte-kit/output", ".svelte-kit/cloudflare"]
+}

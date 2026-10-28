@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "mandelbrot",
+    "title": "Mandelbrot dive",
+    "tags": ["mind blown", "wow", "trippy", "deep"],
+    "width": 240,
+    "height": 180,
+    "mp4Bytes": 27905,
+    "gifBytes": 726876
+  },
+  {
+    "slug": "life",
+    "title": "Game of Life",
+    "tags": ["busy", "work", "monday", "chaos"],
+    "width": 240,
+    "height": 240,
+    "mp4Bytes": 102504,
+    "gifBytes": 317066
+  },
+  {
+    "slug": "testcard",
+    "title": "Test card",
+    "tags": ["deploy", "error", "broken", "facepalm"],
+    "width": 240,
+    "height": 180,
+    "mp4Bytes": 26863,
+    "gifBytes": 173765
+  },
+  {
+    "slug": "bars",
+    "title": "Colour bars",
+    "tags": ["no signal", "tired", "monday", "offline"],
+    "width": 240,
+    "height": 180,
+    "mp4Bytes": 16904,
+    "gifBytes": 66730
+  },
+  {
+    "slug": "cells",
+    "title": "Cellular automaton",
+    "tags": ["growth", "progress", "thank you", "celebrate"],
+    "width": 240,
+    "height": 320,
+    "mp4Bytes": 52852,
+    "gifBytes": 284651
+  },
+  {
+    "slug": "sierpinski",
+    "title": "Sierpinski shimmer",
+    "tags": ["fancy", "celebrate", "party", "yay"],
+    "width": 240,
+    "height": 240,
+    "mp4Bytes": 34137,
+    "gifBytes": 173279
+  },
+  {
+    "slug": "gradient-sunrise",
+    "title": "Sunrise gradient",
+    "tags": ["good morning", "coffee", "calm", "monday"],
+    "width": 240,
+    "height": 320,
+    "mp4Bytes": 8026,
+    "gifBytes": 705661
+  },
+  {
+    "slug": "gradient-sea",
+    "title": "Sea gradient",
+    "tags": ["calm", "relax", "weekend", "thank you"],
+    "width": 240,
+    "height": 180,
+    "mp4Bytes": 5227,
+    "gifBytes": 615967
+  },
+  {
+    "slug": "rgb",
+    "title": "RGB sweep",
+    "tags": ["party", "dance", "celebrate", "excited"],
+    "width": 240,
+    "height": 240,
+    "mp4Bytes": 8464,
+    "gifBytes": 759541
+  },
+  {
+    "slug": "noise",
+    "title": "Static noise",
+    "tags": ["confused", "what", "error", "facepalm"],
+    "width": 240,
+    "height": 180,
+    "mp4Bytes": 201141,
+    "gifBytes": 1317083
+  },
+  {
+    "slug": "bloom",
+    "title": "Pink bloom",
+    "tags": ["love", "thank you", "hug", "coffee"],
+    "width": 240,
+    "height": 240,
+    "mp4Bytes": 73646,
+    "gifBytes": 107046
+  },
+  {
+    "slug": "spin",
+    "title": "Spinning zone plate",
+    "tags": ["dizzy", "mind blown", "deploy", "busy"],
+    "width": 240,
+    "height": 320,
+    "mp4Bytes": 82058,
+    "gifBytes": 435018
+  }
+]

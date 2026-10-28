@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gif-tastic-dynamic",
+  "main": ".svelte-kit/cloudflare/_worker.js",
+  "compatibility_date": "2026-10-19",
+  "compatibility_flags": ["nodejs_als"],
+  "observability": { "enabled": true },
+  // Required by `wrangler preview`, which Workers Builds runs for non-production branches.
+  "previews": {},
+  "assets": { "binding": "ASSETS", "directory": ".svelte-kit/cloudflare" },
+  // GIPHY_API_KEY is a secret: `pnpm exec wrangler secret put GIPHY_API_KEY`. Without it the app
+  // serves the bundled demo clips, so it always works.
+}
