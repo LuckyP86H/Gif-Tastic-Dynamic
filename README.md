@@ -102,7 +102,7 @@ bunx wrangler secret put AGENT_API_KEY     # optional, with AGENT_PROVIDER and A
 bun run cf:deploy
 ```
 
-With **Workers Builds** (it detects `bun.lock` and installs with Bun): build command `bun run build`, deploy command `bunx wrangler deploy`, and the default `npx wrangler preview` for other branches (the `previews` block is already in [`wrangler.jsonc`](wrangler.jsonc)). The Worker's name is `gif-tastic-dynamic`. Set `GIPHY_API_KEY` (and the `AGENT_*` values) as secrets in the dashboard.
+With **Workers Builds** (it detects `bun.lock` and installs with Bun): build command `bun run build`, deploy command `bunx wrangler deploy`, and the default `npx wrangler preview` for other branches (the `previews` block is already in [`wrangler.jsonc`](wrangler.jsonc)). The Worker's name is `gif-tastic-dynamic`. Set `GIPHY_API_KEY` (and the `AGENT_*` values) as secrets in the dashboard. If the build command is left empty, `bun install` still builds the app on Workers Builds, through [`scripts/prepare.mjs`](scripts/prepare.mjs).
 
 ## Honest limits
 
