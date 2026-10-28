@@ -1,4 +1,4 @@
-import { z } from "zod";
+import * as z from "zod/mini";
 import type { AgentEvent, Pick } from "#lib/agent-events.ts";
 import type { Gif } from "#lib/gif.ts";
 import { suggestReactions } from "#lib/reactions.ts";
@@ -58,20 +58,21 @@ export const TOOLS: ToolSpec[] = [
 ];
 
 const printable = /^[^\p{C}]*$/u;
+/** Trimmed, printable text of a bounded length. */
+const text = (min: number, max: number) =>
+  z.string().check(z.trim(), z.minLength(min), z.maxLength(max), z.regex(printable));
+
+// zod/mini: the same validation as full Zod, but tree-shakable, so the Worker ships only what
+// these three schemas use (full Zod added about 120 KiB gzipped to the bundle).
 const schemas = {
-  search_gifs: z.object({ query: z.string().trim().min(1).max(40).regex(printable) }),
-  look_at: z.object({ ids: z.array(z.string()).min(1).max(LIMITS.perLook) }),
+  search_gifs: z.object({ query: text(1, 40) }),
+  look_at: z.object({
+    ids: z.array(z.string()).check(z.minLength(1), z.maxLength(LIMITS.perLook)),
+  }),
   choose: z.object({
     picks: z
-      .array(
-        z.object({
-          id: z.string(),
-          why: z.string().trim().min(3).max(160).regex(printable),
-          alt: z.string().trim().min(3).max(180).regex(printable),
-        }),
-      )
-      .min(1)
-      .max(LIMITS.picks),
+      .array(z.object({ id: z.string(), why: text(3, 160), alt: text(3, 180) }))
+      .check(z.minLength(1), z.maxLength(LIMITS.picks)),
   }),
 };
 
