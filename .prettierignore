@@ -1,0 +1,4 @@
+# Generated files: keep them exactly as their tools write them.
+worker-configuration.d.ts
+bun.lock
+src/lib/server/demo-clips.json
