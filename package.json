@@ -19,7 +19,7 @@
     "test": "bun test src",
     "e2e": "playwright test",
     "knip": "knip",
-    "cf-typegen": "wrangler types && sed -i.bak '/mainModule: typeof import/d' worker-configuration.d.ts && rm worker-configuration.d.ts.bak",
+    "cf-typegen": "node scripts/typegen.mjs",
     "cf:deploy": "bun run build && wrangler deploy",
     "demo-clips": "bun scripts/make-demo-clips.mjs",
     "gifs": "bun scripts/make-gifs.mjs",
