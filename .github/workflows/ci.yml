@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main, master]
+    branches: [master, claude/modernize-legacy-projects-b8e9x]
   pull_request:
   schedule:
     # Weekly: catches breakage from dependency drift even when nobody pushes.
