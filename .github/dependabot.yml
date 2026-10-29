@@ -12,6 +12,10 @@ updates:
       # Types track the oldest Node version this project supports (see "engines").
       - dependency-name: "@types/node"
         update-types: ["version-update:semver-major"]
+      # TypeScript 7 drops the JS API that SvelteKit and svelte-check use, and their
+      # peer ranges stop at ^6, so typecheck fails. Revisit when they support 7.
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: github-actions
     directory: /
