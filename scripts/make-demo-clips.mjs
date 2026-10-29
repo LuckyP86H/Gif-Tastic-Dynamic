@@ -2,7 +2,7 @@
 // README GIFs). Each clip is rendered three ways so the app can show what GIF really costs:
 // an MP4 (what the page plays), a JPEG still (the poster), and a GIF that is measured and then
 // deleted (what it would have cost).
-//   pnpm demo-clips      (needs ffmpeg with libx264)
+//   bun run demo-clips   (needs ffmpeg with libx264)
 import { spawnSync } from "node:child_process";
 import { mkdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 

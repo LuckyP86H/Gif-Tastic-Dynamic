@@ -1,6 +1,6 @@
 // Records the README GIFs from the real app: starts a local dev server, drives it with
 // Playwright, takes a screenshot per step, then stitches the frames with ffmpeg.
-//   pnpm gifs        (needs ffmpeg on the PATH)
+//   bun run gifs         (needs ffmpeg on the PATH)
 import { spawn, spawnSync } from "node:child_process";
 import { mkdirSync, mkdtempSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
